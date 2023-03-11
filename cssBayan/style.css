@@ -1,0 +1,442 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1920px) {
+
+  .container {
+    max-width: 1260px;
+    margin: 0 auto;
+    background: #f5f3f3;
+    padding-bottom: 30px;
+  }
+
+  .container:hover label{
+    color: black;
+  }
+
+  .container:hover .first_label{
+    color: black !important;
+  }
+  .container:hover .arrow{
+    visibility: visible;
+  }
+
+  .container:hover .arrow1{
+    visibility: visible;
+  }
+
+  .container:hover .arrow2{
+    visibility: visible;
+  }
+
+  .container:hover .arrow3{
+    visibility: visible;
+  }
+
+  .container:hover .arrow4{
+    visibility: visible;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px 0;
+    background: rgb(234, 234, 234);
+    text-align: center;
+  }
+
+  .wrapper {
+    width: 320px auto;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .container__arrow {
+    display: flex;
+    justify-content: end;
+  }
+
+  .arrow_down {
+    position: absolute;
+    z-index: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+  }
+
+  .arrow {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    visibility: hidden;
+  }
+
+  .arrow1 {
+    position: relative;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    visibility: hidden;
+  }
+
+  .arrow2 {
+    position: relative;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    visibility: hidden;
+  }
+
+  .arrow3 {
+    position: relative;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    visibility: hidden;
+  }
+
+  .arrow4 {
+    position: relative;
+    top: -40px;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+    visibility: hidden;
+  }
+
+  #check-mem {
+    display: none;
+  }
+
+  #check-mem1 {
+    display: none;
+  }
+
+  #check-mem2 {
+    display: none;
+  }
+
+  #check-mem3 {
+    display: none;
+  }
+
+  #check-mem4 {
+    display: none;
+  }
+
+
+  label {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 1px;
+    color: blue;
+    border-top: solid 1px black;
+    max-width: 1260px;
+    z-index: 100;
+  }
+
+  .first_label {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 511px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 22px;
+    margin: 1px;
+    color: black;
+    border-top: solid 1px black;
+    max-width: 1260px;
+    z-index: 100;
+  }
+
+  label:active {
+    cursor: progress;
+    background: #ffffff36;
+  }
+
+  @keyframes example {
+    from {
+      transform: scale(0.5);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .img {
+    animation-name: example;
+    animation-duration: 0.5s;
+  }
+
+  .mems {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -444px;
+    width: 100%;
+    transform: translateY(100%);
+    font-size: 0;
+    margin: 30px 0;
+  }
+
+  .mems1 {
+    display: none;
+    position: relative;
+    top: -370px;
+    width: 100%;
+    transform: translateY(100%);
+    font-size: 0;
+    margin: 30px 0;
+  }
+
+  .mems2 {
+    display: none;
+    position: relative;
+    top: -430px;
+    width: 100%;
+    transform: translateY(100%);
+    font-size: 0;
+    margin: 30px 0;
+  }
+
+  .mems3 {
+    display: none;
+    position: relative;
+    top: -430px;
+    width: 100%;
+    transform: translateY(100%);
+    font-size: 0;
+    margin: 30px 0;
+  }
+
+  .mems4 {
+    display: none;
+    position: relative;
+    top: -295px;
+    width: 100%;
+    transform: translateY(100%);
+    font-size: 0;
+    margin: 30px 0;
+  }
+
+  #check-mem:checked~.mems {
+    display: none;
+  }
+
+  #check-mem:checked ~ * .arrow{
+    transform: rotate(90deg);
+    top: -40px;
+  }
+
+  #check-mem:checked ~ .first_label{
+    color: blue;
+    position: relative;
+    z-index: 100;
+    height: 40px;
+  }
+
+  #check-mem1:checked~.mems1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #check-mem1:checked ~ * .arrow1{
+    transform: rotate(0deg);
+    top: 0px;
+  }
+
+  #check-mem1:checked ~ label{
+    color: black;
+    position: absolute;
+    height: 445px;
+    z-index: 100;
+  }
+
+  #check-mem2:checked~.mems2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #check-mem2:checked ~ * .arrow2{
+    transform: rotate(0deg);
+    top: 0px;
+  }
+
+  #check-mem2:checked ~ label{
+    color: black;
+    position: absolute;
+    height: 510px;
+    z-index: 100;
+  }
+
+  #check-mem3:checked~.mems3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #check-mem3:checked ~ * .arrow3{
+    transform: rotate(0deg);
+    top: 0px;
+  }
+
+  #check-mem3:checked ~ label{
+    color: black;
+    position: absolute;
+    height: 510px;
+    z-index: 100;
+  }
+
+  #check-mem4:checked~.mems4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #check-mem4:checked ~ * .arrow4{
+    transform: rotate(0deg);
+    top: 0px;
+  }
+
+  #check-mem4:checked ~ label{
+    color: black;
+    position: absolute;
+    height: 395px;
+    z-index: 100;
+  }
+
+}
+
+@media only screen and (max-width: 820px) {
+
+  .title {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  .mems {
+    top: -255px;
+  }
+
+  .mems1 {
+    top: -240px;
+  }
+
+  .mems2 {
+    top: -205px;
+  }
+
+  .mems3 {
+    top: -220px;
+  }
+
+  .mems4 {
+    top: -305px;
+  }
+
+  .first_label {
+    height: 327px;
+  }
+
+  /* #check-mem:checked ~ label{
+    height: 320px;
+  } */
+
+  #check-mem1:checked ~ label{
+    height: 315px;
+  }  
+
+  #check-mem2:checked ~ label{
+    height: 280px;
+  }
+
+  #check-mem3:checked ~ label{
+    height: 300px;
+  }
+
+  #check-mem4:checked ~ label{
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  
+  .title {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .mems {
+    top: -165px;
+  }
+
+  .mems1 {
+    top: -155px;
+  }
+
+  .mems2 {
+    top: -135px;
+  }
+
+  .mems3 {
+    top: -145px;
+  }
+
+  .mems4 {
+    top: -205px;
+  }
+
+  .first_label {
+    height: 230px;
+  }
+
+  /* #check-mem:checked ~ label{
+    height: 230px;
+  } */
+
+  #check-mem1:checked ~ label{
+    height: 230px;
+  }
+
+  #check-mem2:checked ~ label{
+    height: 200px;
+  }
+
+  #check-mem3:checked ~ label{
+    height: 215px;
+  }
+
+  #check-mem4:checked ~ label{
+    height: 310px;
+  }
+}
